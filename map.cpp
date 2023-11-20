@@ -136,7 +136,7 @@ QVector<int> Map::calculateShortestPath(int startVertex, int endVertex)
     }
     int j;
     path.push_back(endVertex);
-    j = endVertex;// to return only the path we were interested in
+    j = endVertex;// regresar solo por el camino que nos interesa
     while (j != startVertex)
     {
         path.insert(path.begin(), previous[j]);
