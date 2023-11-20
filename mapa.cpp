@@ -9,7 +9,7 @@ const int INF = 99999;
 
 Map::Map(int **boardData)
 {
-    // initlize the 2D array to zeros
+    
     for(int i=0; i<122; i++)
         for(int j=0; j<122; j++)
             matrix[i][j] = 0;
