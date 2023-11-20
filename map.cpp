@@ -14,32 +14,32 @@ Map::Map(int **boardData)
         for(int j=0; j<122; j++)
             matrix[i][j] = 0;
 
-    // populate the adjacency matrix with edges
+    // Llena la matriz de adyacencia con aristas
     for (int i = 0; i < 16; i++)
     {
         for (int j = 0; j < 16; j++)
         {
             if (boardData[i][j] >= 0)
             {
-                // check if upper node is not a wall
+                // comprobar si nodo superior no es una pared
                 if (boardData[i-1][j] >= 0)
                 {
                     matrix[boardData[i][j]][boardData[i - 1][j]] = 1;
                 }
 
-                // check if lower node is not a wall
+                // Compruebe  nodo inferior no es una pared
                 if (boardData[i+1][j] >= 0)
                 {
                     matrix[boardData[i][j]][boardData[i + 1][j]] = 1;
                 }
 
-                // check if left node is not a wall
+                // Comprobar si nodo izquierdo no es una pared
                 if (boardData[i][j-1] >= 0)
                 {
                     matrix[boardData[i][j]][boardData[i][j-1]] = 1;
                 }
 
-                // check if right node is not a wall
+                // comprobar si nodo derecho no es una pared
                 if (boardData[i][j+1] >= 0)
                 {
                     matrix[boardData[i][j]][boardData[i][j+1]] = 1;
@@ -52,7 +52,7 @@ Map::Map(int **boardData)
     QFile file("C:\\proyectos\\RickAndMorty\\GameResources");
     if(file.open(QIODevice::WriteOnly | QIODevice::Text))
     {
-      // We're going to streaming text to the file
+      // vamos a transmitir texto al archivo
       QTextStream stream(&file);
       for(int i=0; i<122; i++)
       {
@@ -71,7 +71,7 @@ QVector<int> Map::calculateShortestPath(int startVertex, int endVertex)
     QVector<int> path;
     if(endVertex < 0)
     {
-        // return empty path to make the characters stay still
+        // Regresar al camino vacío ya que los personajes se queden fijos
         return path;
     }
     bool done[122];
@@ -106,8 +106,8 @@ QVector<int> Map::calculateShortestPath(int startVertex, int endVertex)
 
     while (count < 122)
     {
-        // Which vertex is done?
-        // Vertex with the lowest cost.
+        // ¿Qué vértice se esta usando?
+        // Vértice con el menor costo.
         double minimum = INF;
         int currentVertex;
         for (int i = 0; i < 122; i++)
