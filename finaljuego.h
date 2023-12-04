@@ -5,7 +5,8 @@
 #include <QPixmap>
 #include <QDir>
 #include "iniciojuego.h"
-#include "tablagamers.h"
+#include "mainwindow.h"
+#include "nivel2.h"
 
 namespace Ui {
 class FinalJuego;

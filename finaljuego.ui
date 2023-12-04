@@ -35,9 +35,9 @@
    <widget class="QPushButton" name="playAgainButton">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>650</x>
       <y>340</y>
-      <width>191</width>
+      <width>131</width>
       <height>51</height>
      </rect>
     </property>
@@ -71,7 +71,7 @@ QPushButton:hover {
 </string>
     </property>
     <property name="text">
-     <string>VOLVER A JUGAR</string>
+     <string>NIVEL 1</string>
     </property>
    </widget>
    <widget class="QPushButton" name="leaderBoardButton">
@@ -113,7 +113,7 @@ QPushButton:hover {
 </string>
     </property>
     <property name="text">
-     <string>PUNTOS</string>
+     <string>NIVEL 2</string>
     </property>
    </widget>
   </widget>

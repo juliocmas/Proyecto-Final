@@ -1,5 +1,6 @@
 #include "finaljuego.h"
 #include "ui_finaljuego.h"
+#include "nivel2.h"
 
 FinalJuego::FinalJuego(bool win, QWidget *parent) :
     QMainWindow(parent),
@@ -51,6 +52,6 @@ void FinalJuego::on_playAgainButton_clicked()
 void FinalJuego::on_leaderBoardButton_clicked()
 {
     // Crear una nueva instancia de TablaGamers y mostrarla
-    TablaGamers* screen = new TablaGamers();
+    MainWindow* screen = new MainWindow();
     screen->show();
 }

@@ -29,6 +29,21 @@ InicioJuego::~InicioJuego()
     delete ui;
 }
 
+// En iniciojuego.cpp
+#include "iniciojuego.h"
+
+int InicioJuego::SCREEN_WIDTH_PX() {
+    // Implementa la lógica para obtener el ancho de pantalla
+    return 800; // Esto es solo un ejemplo, reemplázalo con la lógica real
+}
+
+int InicioJuego::SCREEN_HEIGHT_PX() {
+    // Implementa la lógica para obtener la altura de pantalla
+    return 600; // Esto es solo un ejemplo, reemplázalo con la lógica real
+}
+
+
+
 // Manejador de eventos para el botón "playButton"
 void InicioJuego::on_playButton_clicked()
 {

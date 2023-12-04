@@ -6,6 +6,7 @@
 #include <QDir>
 #include <QMessageBox>
 #include <juegoscreen.h>
+#include "nivel2.h"
 
 
 
@@ -19,6 +20,9 @@ class InicioJuego : public QMainWindow
     Q_OBJECT
 
 public:
+
+    int SCREEN_WIDTH_PX();
+    int SCREEN_HEIGHT_PX();
     InicioJuego(QWidget *parent = nullptr);
     ~InicioJuego();
 

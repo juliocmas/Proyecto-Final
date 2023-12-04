@@ -38,8 +38,8 @@
    <widget class="QPushButton" name="playButton">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>630</y>
+      <x>610</x>
+      <y>540</y>
       <width>161</width>
       <height>51</height>
      </rect>
@@ -80,9 +80,9 @@ QPushButton:hover {
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>630</y>
-      <width>226</width>
+      <x>-50</x>
+      <y>550</y>
+      <width>161</width>
       <height>49</height>
      </rect>
     </property>
@@ -108,8 +108,8 @@ color: white;
    <widget class="QLineEdit" name="nameText">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>630</y>
+      <x>120</x>
+      <y>550</y>
       <width>161</width>
       <height>41</height>
      </rect>

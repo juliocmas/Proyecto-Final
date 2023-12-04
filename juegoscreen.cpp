@@ -135,6 +135,15 @@ JuegoScreen::JuegoScreen(int level, int ricks, User &account)
     gameTimer.start();
 }
 
+void JuegoScreen::win()
+{
+    // Implementa lo que sucede cuando se gana el juego
+    qDebug() << "¡Has ganado!";
+    // Puedes agregar más lógica aquí según tus necesidades
+}
+
+
+
 // Slot para el fin del juego
 void JuegoScreen::gameOver()
 {
@@ -147,12 +156,4 @@ void JuegoScreen::gameOver()
     hide();
 }
 
-// Slot para la ganadores en el juego
-void JuegoScreen::win()
-{
-    currentUser.setTime(gameTimer.elapsed());
-    TablaGamers::addUser(currentUser);
-    FinalJuego* screen = new FinalJuego(true);
-    screen->show();
-    hide();
-}
+

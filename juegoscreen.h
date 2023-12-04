@@ -18,7 +18,8 @@
 #include "finaljuego.h"
 #include "map.h"
 #include "user.h"
-#include "tablagamers.h"
+#include "mainwindow.h"
+#include "nivel2.h"
 
 class JuegoScreen: public QGraphicsView
 {
